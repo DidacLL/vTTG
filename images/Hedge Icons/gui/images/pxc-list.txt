@@ -15,3 +15,7 @@
 ./bg2_320px.c
 ./bg2_240px.c
 ./bg_480px.c
+./bg4_240px.c
+./bg4_540px.c
+./bg4_480px.c
+./bg4_320px.c

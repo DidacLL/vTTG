@@ -1,4 +1,3 @@
-./bg3_540px.png
 ./bg_480px.png
 ./bg1_240px.png
 ./bg_540px.png
@@ -12,6 +11,11 @@
 ./bg2_540px.png
 ./bg1_320px.png
 ./bg3_240px.png
-./bg2_320px.png
+./bg3_540px.png
 ./bg3_480px.png
 ./bg3_320px.png
+./bg2_320px.png
+./bg4_240px.png
+./bg4_540px.png
+./bg4_480px.png
+./bg4_320px.png

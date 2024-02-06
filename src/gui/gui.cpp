@@ -75,41 +75,49 @@
     LV_IMG_DECLARE( bg1_320px );
     LV_IMG_DECLARE( bg2_320px );
     LV_IMG_DECLARE( bg3_320px );
+    LV_IMG_DECLARE( bg4_320px );
 
     const lv_img_dsc_t bg = bg_320px;
     const lv_img_dsc_t bg1 = bg1_320px;
     const lv_img_dsc_t bg2 = bg2_320px;
     const lv_img_dsc_t bg3 = bg3_320px;
+    const lv_img_dsc_t bg4 = bg4_320px;
 #elif defined( M5PAPER )
     LV_IMG_DECLARE( bg_540px );
     LV_IMG_DECLARE( bg1_540px );
     LV_IMG_DECLARE( bg2_540px );
     LV_IMG_DECLARE( bg3_540px );
+    LV_IMG_DECLARE( bg4_540px );
 
     const lv_img_dsc_t bg = bg_540px;
     const lv_img_dsc_t bg1 = bg1_540px;
     const lv_img_dsc_t bg2 = bg2_540px;
     const lv_img_dsc_t bg3 = bg3_540px;
+    const lv_img_dsc_t bg4 = bg4_540px;
 #elif defined( WT32_SC01 )
     LV_IMG_DECLARE( bg_480px );
     LV_IMG_DECLARE( bg1_480px );
     LV_IMG_DECLARE( bg2_480px );
     LV_IMG_DECLARE( bg3_480px );
+    LV_IMG_DECLARE( bg4_480px );
 
     const lv_img_dsc_t bg = bg_480px;
     const lv_img_dsc_t bg1 = bg1_480px;
     const lv_img_dsc_t bg2 = bg2_480px;
     const lv_img_dsc_t bg3 = bg3_480px;
+    const lv_img_dsc_t bg4 = bg4_480px;
 #else
     LV_IMG_DECLARE( bg_240px );
     LV_IMG_DECLARE( bg1_240px );
     LV_IMG_DECLARE( bg2_240px );
     LV_IMG_DECLARE( bg3_240px );
+    LV_IMG_DECLARE( bg4_240px );
 
     const lv_img_dsc_t bg = bg_240px;
     const lv_img_dsc_t bg1 = bg1_240px;
     const lv_img_dsc_t bg2 = bg2_240px;
     const lv_img_dsc_t bg3 = bg3_240px;
+    const lv_img_dsc_t bg4 = bg4_240px;
 #endif
 
 lv_obj_t *img_bin = NULL;
@@ -333,7 +341,9 @@ void gui_set_background_image ( uint32_t background_image ) {
             lv_obj_set_hidden( img_bin, false );
             break;
         case 4:
-            lv_obj_set_hidden( img_bin, true );
+            lv_img_set_src( img_bin, &bg4 );
+            lv_obj_align( img_bin, NULL, LV_ALIGN_CENTER, 0, 0 );
+            lv_obj_set_hidden( img_bin, false );
             break;
         case 5: {
             FILE* file;
